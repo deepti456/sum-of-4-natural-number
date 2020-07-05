@@ -1,8 +1,10 @@
+
 #include <stdio.h>
 
 int sum(int n)
 {
-    if(n==0)
+
+if(n==0)
         return n;
     else
         return (n+sum(n-1));
@@ -11,7 +13,10 @@ int sum(int n)
 void main()
 {
     int n;
+    printf("enter the value of n\n");
+scanf("%d",&n);
 
 
-    printf("Summation of first 4 natural numbers = %d\n",sum(n=4));
+
+    printf("Summation of first 4 natural numbers = %d\n",sum(n));
 }
